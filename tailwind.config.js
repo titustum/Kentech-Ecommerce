@@ -14,6 +14,12 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                naivas: {
+                    orange: "#f78d2b",
+                    green: "#005b6b",
+                }
+            }
         },
     },
 
