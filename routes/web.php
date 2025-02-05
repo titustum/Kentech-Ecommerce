@@ -11,6 +11,7 @@ Route::view('/products', 'welcome')->name("products");
 Route::view('/categories/show', 'welcome')->name("categories.show");
 Route::view('/admin/orders/show', 'admin.orders')->name("orders.show");
 Route::view('/admin/products/show', 'admin.products')->name("admin.products.show");
+Route::view('/admin/customers/show', 'admin.customers')->name("admin.customers.show");
 Route::view('/admin/product/create', 'admin.create-product')->name("admin.product.create");
 
 

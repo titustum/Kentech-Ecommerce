@@ -10,7 +10,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon/favicon.ico') }}" />
 
     <!-- Libs CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +23,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
 
 
 
@@ -116,7 +116,7 @@
                                                                     class="px-5 py-4 bg-gray-100 border-b border-gray-300 hover:bg-gray-100 active">
                                                                     <a href="#!" class="text-gray-500">
                                                                         <div class="flex">
-                                                                            <img src="../assets/images/avatar/avatar-1.jpg"
+                                                                            <img src="{{ asset('assets/images/avatar/avatar-1.jpg') }}"
                                                                                 alt="" class="w-10 h-10 rounded-full">
                                                                             <div class="ms-4">
                                                                                 <p class="mb-1">
@@ -148,7 +148,7 @@
                                                                     class="px-5 py-4 border-b border-gray-300 hover:bg-gray-100">
                                                                     <a href="#!" class="text-gray-500">
                                                                         <div class="flex">
-                                                                            <img src="../assets/images/avatar/avatar-5.jpg"
+                                                                            <img src="{{ asset('assets/images/avatar/avatar-5.jpg') }} "
                                                                                 alt="" class="w-10 h-10 rounded-full">
                                                                             <div class="ms-4">
                                                                                 <p class="mb-1">
@@ -181,7 +181,7 @@
                                                                     class="px-5 py-4 border-b border-gray-300 hover:bg-gray-100">
                                                                     <a href="#!" class="text-gray-500">
                                                                         <div class="flex">
-                                                                            <img src="../assets/images/avatar/avatar-2.jpg"
+                                                                            <img src="{{ asset('assets/images/avatar/avatar-2.jpg') }}"
                                                                                 alt="" class="w-10 h-10 rounded-full">
                                                                             <div class="ms-4">
                                                                                 <p class="mb-1">
@@ -271,7 +271,7 @@
                 <div class="navbar-vertical">
                     <div class="px-4 py-5">
                         <a class="flex items-center space-x-2 navbar-brand" href="./index.html">
-                            <img src="./assets/images/logo/kentech-logo.svg" class="h-8"
+                            <img src="{{ asset('assets/images/logo/kentech-logo.svg') }}" class="h-8"
                                 alt="TailwindCSS eCommerce HTML Template" />
                             <span class="text-[1.75rem] font-semibold text-black">KenTech</span>
                         </a>
@@ -499,7 +499,7 @@
                 <div class="navbar-vertical">
                     <div class="flex items-center justify-between px-4 py-5">
                         <a class="flex items-center space-x-2 navbar-brand" href="./index.html">
-                            <img src="./assets/images/logo/kentech-logo.svg" class="h-8"
+                            <img src="{{ asset('assets/images/logo/kentech-logo.svg') }}" class="h-8"
                                 alt="TailwindCSS eCommerce HTML Template" />
                             <span class="text-[1.75rem] font-semibold text-black">KenTech</span>
                         </a>
@@ -739,19 +739,19 @@
 
     <!-- Theme JS -->
 
-    <script src="./assets/js/theme.min.js"></script>
+    <script src="{{ asset('assets/js/theme.min.js') }}"></script>
 
 
-    <script src="./assets/js/vendors/countdown.js"></script>
+    <script src="{{ asset('assets/js/vendors/countdown.js') }}"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-    <script src="./assets/js/vendors/tns-slider.js"></script>
-    <script src="./assets/js/vendors/zoom.js"></script>
-    <script src="./assets/js/vendors/language.js"></script>
+    <script src="{{ asset('assets/js/vendors/tns-slider.js') }}"></script>
+    <script src="{{ asset('assets/js/vendors/zoom.js') }}"></script>
+    <script src="{{ asset('assets/js/vendors/language.js') }}"></script>
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-    <script src="./assets/js/vendors/swiper.js"></script>
-    <script src="./assets/js/vendors/validation.js"></script>
+    <script src="{{ asset('assets/js/vendors/swiper.js') }}"></script>
+    <script src="{{ asset('assets/js/vendors/validation.js') }}"></script>
 </body>
 
 </html>
