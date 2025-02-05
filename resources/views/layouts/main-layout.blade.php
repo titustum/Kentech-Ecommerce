@@ -258,8 +258,12 @@
                 <div class="container w-full mx-auto max-w-7xl xl:px-4 lg:px-0">
                     <div class="offcanvas offcanvas-left lg:visible" style="background-color: white !important;" tabindex="-1" id="navbar-default">
                         <div class="pb-1 offcanvas-header" >
-                            <a href="./index.html"><img src="./assets/images/logo/freshcart-logo.svg"
-                                    alt="TailwindCSS eCommerce HTML Template" /></a>
+                            <a href="./index.html" class="flex items-center space-x-2">
+                                <img src="./assets/images/logo/kentech-logo.svg"
+                                class="h-8"
+                                    alt="TailwindCSS eCommerce HTML Template" />
+                                <span class="text-[1.75rem] font-semibold text-black">kenTech</span>
+                            </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="text-gray-700 icon icon-tabler icon-tabler-x" width="24" height="24"
@@ -363,123 +367,53 @@
                             <div>
                                 <ul class="gap-3 navbar-nav lg:flex lg:items-center">
                                     <li class="w-full nav-item dropdown lg:w-auto">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="./index.html">Home Default</a></li>
-                                            <li>
-                                                <a class="dropdown-item" href="./index-2.html">
-                                                    Home Modern
-
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="./index-3.html">
-                                                    Home Creative
-
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="./index-4.html">
-                                                    Home Local Store
-
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="./index-5.html">
-                                                    Home Minimalist
-
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        <a class="nav-link" href="#" role="button" aria-expanded="false">Home</a>
                                     </li>
-                                    <li class="w-full nav-item dropdown lg:w-auto">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="./shop-grid.html">Shop Grid - Filter</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="./shop-grid-3-column.html">Shop Grid - 3
-                                                    column</a></li>
-                                            <li><a class="dropdown-item" href="./shop-list.html">Shop List - Filter</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="./shop-filter.html">Shop - Filter</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="./shop-fullwidth.html">Shop Wide</a></li>
-                                            <li><a class="dropdown-item" href="./shop-single.html">Shop Single</a></li>
-                                            <li><a class="dropdown-item" href="./shop-wishlist.html">Shop Wishlist</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="./shop-cart.html">Shop Cart</a></li>
-                                            <li><a class="dropdown-item" href="./shop-checkout.html">Shop Checkout</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="w-full nav-item dropdown lg:w-auto">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Stores</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="./store-list.html">Store List</a></li>
-                                            <li><a class="dropdown-item" href="./store-grid.html">Store Grid</a></li>
-                                            <li><a class="dropdown-item" href="./store-single.html">Store Single</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+
                                     <li class="w-full nav-item dropdown lg:w-auto dropdown-fullwidth">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Mega menu</a>
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore Electronics</a>
                                         <div class="pb-0 dropdown-menu">
                                             <div class="flex flex-wrap p-2 lg:flex-nowrap lg:p-6 gap-x-6">
                                                 <div class="w-full mb-4 lg:w-1/4">
-                                                    <h6 class="pl-3 mb-2 text-green-600">Dairy, Bread & Eggs</h6>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Butter</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Milk Drinks</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Curd & Yogurt</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Eggs</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Buns & Bakery</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Cheese</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Condensed Milk</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Dairy Products</a>
+                                                    <h6 class="pl-3 mb-2 text-blue-600">Smartphones & Accessories</h6>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Smartphones</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Chargers & Cables</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Screen Protectors</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Phone Cases</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Power Banks</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Headphones & Earbuds</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Smartwatches</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Mobile Accessories</a>
                                                 </div>
                                                 <div class="w-full mb-4 lg:w-1/4">
-                                                    <h6 class="pl-3 mb-2 text-green-600">Breakfast & Instant Food</h6>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Breakfast
-                                                        Cereal</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Noodles, Pasta &
-                                                        Soup</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Frozen Veg
-                                                        Snacks</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Frozen Non-Veg
-                                                        Snacks</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Vermicelli</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Instant Mixes</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Butter</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Fruit and
-                                                        Juices</a>
+                                                    <h6 class="pl-3 mb-2 text-blue-600">Laptops & Computers</h6>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Laptops</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Monitors</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Keyboards & Mice</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">External Storage</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Printers & Scanners</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Laptop Bags</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Docking Stations</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Computer Accessories</a>
                                                 </div>
                                                 <div class="w-full mb-4 lg:w-1/4">
-                                                    <h6 class="pl-3 mb-2 text-green-600">Cold Drinks & Juices</h6>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Soft Drinks</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Fruit Juices</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Coldpress</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Water & Ice
-                                                        Cubes</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Soda & Mixers</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Health Drinks</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Herbal Drinks</a>
-                                                    <a class="dropdown-item" href="./shop-grid.html">Milk Drinks</a>
+                                                    <h6 class="pl-3 mb-2 text-blue-600">Home Appliances</h6>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Refrigerators</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Washing Machines</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Microwaves & Ovens</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Air Conditioners</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Vacuum Cleaners</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Dishwashers</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Water Heaters</a>
+                                                    <a class="dropdown-item" href="./shop-grid.html">Kitchen Appliances</a>
                                                 </div>
                                                 <div class="w-full mb-4 lg:w-1/4">
                                                     <div class="border-0 card">
-                                                        <img src="./assets/images/banner/menu-banner.jpg"
-                                                            alt="TailwindCSS eCommerce HTML Template" />
+                                                        <img src="./assets/images/banner/menu-banner.jpg" alt="KenTech Electronics Offer" />
                                                         <div class="absolute pl-6 mt-8">
-                                                            <h5>
-                                                                Dont miss this
-                                                                <br />
-                                                                offer today.
-                                                            </h5>
+                                                            <h5>Exclusive Deals<br> on Electronics</h5>
                                                             <a href="#"
-                                                                class="inline-flex items-center mt-3 text-white bg-green-600 border-green-600 btn gap-x-2 disabled:opacity-50 disabled:pointer-events-none hover:text-white hover:bg-green-700 hover:border-green-700 active:bg-green-700 active:border-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 btn-sm">
+                                                                class="inline-flex items-center mt-3 text-white bg-blue-600 border-blue-600 btn gap-x-2 disabled:opacity-50 disabled:pointer-events-none hover:text-white hover:bg-blue-700 hover:border-blue-700 active:bg-blue-700 active:border-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 btn-sm">
                                                                 Shop Now
                                                             </a>
                                                         </div>
@@ -488,100 +422,30 @@
                                             </div>
                                         </div>
                                     </li>
+
+
                                     <li class="w-full nav-item dropdown lg:w-auto">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
-                                            <li><a class="dropdown-item" href="./blog-single.html">Blog Single</a></li>
-                                            <li><a class="dropdown-item" href="./blog-category.html">Blog Category</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="./about.html">About us</a></li>
-                                            <li><a class="dropdown-item" href="./404error.html">404 Error</a></li>
-                                            <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                                        </ul>
+                                        <a class="nav-link" href="#" role="button" aria-expanded="false">Blog</a>
+                                    </li>
+                                    <li class="w-full nav-item dropdown lg:w-auto">
+                                        <a class="nav-link" href="#" role="button" aria-expanded="false">About us</a>
                                     </li>
                                     <li class="w-full nav-item dropdown lg:w-auto">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">Account</a>
                                         <ul class="dropdown-menu lg:right-0 xl:right-auto">
-                                            <li><a class="dropdown-item" href="./signin.html">Sign in</a></li>
-                                            <li><a class="dropdown-item" href="./signup.html">Signup</a></li>
-                                            <li><a class="dropdown-item" href="./forgot-password.html">Forgot
-                                                    Password</a></li>
-                                            <li class="dropdown-submenu dropend">
-                                                <a class="dropdown-item dropdown-list-group-item dropdown-toggle"
-                                                    href="#">My Account</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="./account-orders.html">Orders</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item"
-                                                            href="./account-settings.html">Settings</a></li>
-                                                    <li><a class="dropdown-item"
-                                                            href="./account-address.html">Address</a></li>
-                                                    <li><a class="dropdown-item"
-                                                            href="./account-payment-method.html">Payment Method</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item"
-                                                            href="./account-notification.html">Notification</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a class="dropdown-item" href="{{ route('login') }}">Sign in</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('register') }}">Signup</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="./dashboard/index.html">Dashboard</a>
                                     </li>
 
-                                    <li class="w-full nav-item dropdown lg:w-auto dropdown-flyout">
-                                        <a class="nav-link" href="#" id="navbarDropdownDocs" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">Docs</a>
-                                        <div class="dropdown-menu dropdown-menu-lg lg:right-0 xl:right-auto">
-                                            <a class="items-start dropdown-item" href="./docs/index.html">
-                                                <div>
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                                        class="text-green-500 icon icon-tabler icon-tabler-file-text"
-                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                                        stroke="currentColor" fill="none" stroke-linecap="round"
-                                                        stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                                                        <path
-                                                            d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
-                                                        <path d="M9 9l1 0" />
-                                                        <path d="M9 13l6 0" />
-                                                        <path d="M9 17l6 0" />
-                                                    </svg>
-                                                </div>
-                                                <div class="ml-3 leading-none">
-                                                    <h6 class="mb-1">Documentations</h6>
-                                                    <p class="text-sm">Browse the all documentation</p>
-                                                </div>
-                                            </a>
-                                            <a class="items-start dropdown-item" href="./docs/changelog.html">
-                                                <div>
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                                        class="text-green-500 icon icon-tabler icon-tabler-box-multiple"
-                                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                                        stroke="currentColor" fill="none" stroke-linecap="round"
-                                                        stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                        <path
-                                                            d="M7 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
-                                                        <path
-                                                            d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" />
-                                                    </svg>
-                                                </div>
-                                                <div class="ml-3 leading-none">
-                                                    <h6 class="mb-1">
-                                                        Changelog
-                                                        <span class="ml-1 text-green-600">v1.4.0</span>
-                                                    </h6>
-                                                    <p class="text-sm">See what's new</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                    <li class="w-full nav-item dropdown lg:w-auto">
+                                        <a class="nav-link" href="#" role="button" aria-expanded="false">Contact Us</a>
                                     </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -666,7 +530,7 @@
                                 <li><a href="#!" class="inline-block hover:text-green-600">KenTech programs</a></li>
                                 <li><a href="#!" class="inline-block hover:text-green-600">Gift Cards</a></li>
                                 <li><a href="#!" class="inline-block hover:text-green-600">Promos & Coupons</a></li>
-                                <li><a href="#!" class="inline-block hover:text-green-600">Freshcart Ads</a></li>
+                                <li><a href="#!" class="inline-block hover:text-green-600">KenTech Ads</a></li>
                                 <li><a href="#!" class="inline-block hover:text-green-600">Careers</a></li>
                             </ul>
                         </div>
