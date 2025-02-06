@@ -10,24 +10,34 @@ class Product extends Model
     use HasFactory;
 
     protected $fillable = [
-        'category_id',
-        'name',
-        'image',
+        'productName',
+        'category_id', // Foreign key for category
+        'brandName',
         'price',
-        'discount',
-        'rating',
+        'salePrice',
+        'stock',
+        'specifications',
         'description',
+        'productImages',
+        'productVideo',
     ];
 
-    // Relationship with Category
+    protected $casts = [
+        'productImages' => 'array',
+    ];
+
+    /**
+     * A product belongs to a category.
+     */
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
 
-    // Get the final price after discount
-    public function getFinalPriceAttribute()
+    // Accessor to get product images as an array
+    public function getProductImagesAttribute($value)
     {
-        return $this->price * (1 - $this->discount / 100);
+        return json_decode($value);  // Assuming productImages is stored as a JSON array in the DB
     }
 }
+

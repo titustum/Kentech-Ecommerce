@@ -20,13 +20,11 @@
                         <!-- Product Category -->
                         <div class="flex flex-col gap-2">
                             <label for="category" class="font-medium text-gray-800">Category <span class="text-red-600">*</span></label>
-                            <select id="category" name="category" class="p-3 border border-gray-300 rounded-lg form-control focus:ring-green-600 focus:ring-0 focus:border-green-600" required>
+                            <select id="category" name="category_id" class="p-3 border border-gray-300 rounded-lg form-control focus:ring-green-600 focus:ring-0 focus:border-green-600" required>
                                 <option value="">Select Category</option>
-                                <option value="laptops">Laptops</option>
-                                <option value="smartphones">Smartphones</option>
-                                <option value="accessories">Accessories</option>
-                                <option value="home-appliances">Home Appliances</option>
-                                <!-- More categories can be added here -->
+                                @foreach($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                @endforeach
                             </select>
                             <div class="invalid-feedback">Please select a category.</div>
                         </div>

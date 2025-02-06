@@ -747,9 +747,9 @@
 
                             <div class="relative flex justify-center text-center">
                                 <div class="absolute top-0 left-0">
-                                    <span class="inline-block p-1 text-sm font-semibold leading-none text-center text-white align-baseline bg-green-600 rounded">{{$product->discount}}%</span>
+                                    <span class="inline-block p-1 text-sm font-semibold leading-none text-center text-white align-baseline bg-green-600 rounded">{{( round($product->salePrice/$product->price)*100) }}%</span>
                                 </div>
-                                <a href="#!"><img src="{{ asset('storage/'. $product->image) }}"
+                                <a href="#!"><img src="{{ asset('storage/'. $product->productImages[0]) }}"
                                         alt="Grocery Ecommerce Template" class="object-contain w-full h-[200px]" /></a>
 
                                 <div class="absolute w-full bottom-[15%] opacity-0 invisible card-product-action">
@@ -801,7 +801,7 @@
                                 </a>
                                 <div class="flex flex-col gap-2">
                                     <h3 class="text-base truncate">
-                                        <a href="./shop-single.html">{{$product->name}}</a>
+                                        <a href="./shop-single.html">{{$product->productName}}</a>
                                         </h3>
                                     <div class="flex items-center">
                                         <div class="flex flex-row gap-3">
@@ -866,8 +866,8 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <span class="font-semibold text-gray-900">${{$product->price - ($product->price * $product->discount/100) }}</span>
-                                        <span class="text-gray-500 line-through">${{$product->price}}</span>
+                                        <span class="font-semibold text-gray-900">${{ $product->salePrice }}</span>
+                                        <span class="text-gray-500 line-through">${{ $product->price }}</span>
                                     </div>
                                     <div>
                                         <button type="button"
@@ -943,7 +943,7 @@
 
                                     <div class="relative flex justify-center text-center">
                                         <a href="./shop-single.html"><img
-                                                src="{{ asset('storage/'. $product->image) }}"
+                                                src="{{ asset('storage/'. $product->productImages[0]) }}"
                                                 alt="Grocery Ecommerce Template"
                                                 class="h-[220px] object-contain max-w-full m-auto mb-3" /></a>
 
@@ -994,11 +994,11 @@
                                     <div class="flex flex-col gap-3">
                                 <a href="#!" class="text-gray-500 text-decoration-none"><small>{{ $product->category->name }}</small></a>
                                         <div class="flex flex-col gap-2">
-                                            <h3 class="text-base truncate"><a href="./shop-single.html">{{ $product->name }}</a></h3>
+                                            <h3 class="text-base truncate"><a href="./shop-single.html">{{ $product->productName }}</a></h3>
 
                                             <div class="flex items-center justify-between">
                                                 <div>
-                                                    <span class="font-semibold text-gray-900">${{ $product->price - ($product->price * $product->discount/100) }}</span>
+                                                    <span class="font-semibold text-gray-900">${{ $product->salePrice }}</span>
                                                     <span class="text-gray-500 line-through">${{ $product->price }}</span>
                                                 </div>
                                                 <div>
