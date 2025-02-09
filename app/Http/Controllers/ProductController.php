@@ -66,4 +66,28 @@ class ProductController extends Controller
 
         // return redirect()->route('admin.products.index')->with('success', 'Product uploaded successfully!');
     }
+
+    public function showProducts(){
+        $products = Product::get();
+        return view('admin.products', ['products'=>$products]);
+    }
+
+    public function getJsonifiedProductDetails($id)
+    {
+        // Retrieve the product along with its category and images
+        $product = Product::with('category')->findOrFail($id);
+
+        // Return product details as JSON
+        return response()->json([
+            'productName' => $product->productName,
+            'brandName' => $product->brandName,
+            'price' => $product->price,
+            'category' => $product->category,
+            'description' => $product->description,
+            'specifications' => $product->specifications,
+            'productImages' => $product->productImages,
+            'productVideo' => $product->productVideo
+        ]);
+    }
+
 }

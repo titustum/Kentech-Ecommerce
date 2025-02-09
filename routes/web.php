@@ -11,7 +11,7 @@ Route::get('/', [WelcomeController::class, 'index'])->name("home");
 Route::view('/products', 'welcome')->name("products");
 Route::view('/categories/show', 'welcome')->name("categories.show");
 Route::view('/admin/orders/show', 'admin.orders')->name("orders.show");
-Route::view('/admin/products/show', 'admin.products')->name("admin.products.show");
+Route::get('/admin/products/show', [ProductController::class, 'showProducts'])->name("admin.products.show");
 Route::view('/admin/customers/show', 'admin.customers')->name("admin.customers.show");
 Route::get('/admin/product/create', [ProductController::class, 'create'])->name("admin.product.create");
 Route::post('/admin/upload-product', [ProductController::class, 'uploadProduct'])->name('admin.upload.product');

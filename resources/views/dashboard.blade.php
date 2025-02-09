@@ -10,7 +10,7 @@
                         <h1>Welcome back! KenTech</h1>
                         <p class="mb-6">KenTech is simple &amp; clean design for developer and designer.
                         </p>
-                        <a href="#"
+                        <a href="{{ route('admin.product.create') }}"
                             class="inline-flex items-center text-white bg-green-600 border-green-600 btn gap-x-2 disabled:opacity-50 disabled:pointer-events-none hover:text-white hover:bg-green-700 hover:border-green-700 active:bg-green-700 active:border-green-700 focus:outline-none focus:ring-4 focus:ring-green-100">
                             Create Product
                         </a>

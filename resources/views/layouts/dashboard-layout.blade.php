@@ -53,14 +53,14 @@
                         <form role="search">
                             <label for="search" class="invisible hidden mb-2 font-medium text-gray-800">Search</label>
                             <input
-                                class="border border-gray-300 text-gray-900 rounded-lg focus:shadow-[0_0_0_.25rem_rgba(10,173,10,.25)] focus:ring-green-600 focus:ring-0 focus:border-green-600 block p-2 px-3 disabled:opacity-50 disabled:pointer-events-none w-full text-base"
+                                class="border border-gray-300 text-gray-900 rounded-lg focus:shadow-[0_0_0_.25rem_rgba(10,173,10,.25)] focus:ring-blue-600 focus:ring-0 focus:border-blue-600 block p-2 px-3 disabled:opacity-50 disabled:pointer-events-none w-full text-base"
                                 type="search" placeholder="Search" aria-label="Search" id="search">
                         </form>
                     </div>
                     <div>
                         <ul class="flex items-center gap-2 list-unstyled">
                             <li class="dropdown-center">
-                                <a class="relative w-12 h-12 p-0 text-gray-600 rounded-full btn hover:bg-gray-100 hover:text-green-600"
+                                <a class="relative w-12 h-12 p-0 text-gray-600 rounded-full btn hover:bg-gray-100 hover:text-blue-600"
                                     href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -84,7 +84,7 @@
                                         </div>
                                         <a href="#!" class="text-gray-500">
                                         </a><a href="#"
-                                            class="w-10 h-10 p-0 text-gray-600 rounded-full btn hover:bg-gray-100 hover:text-green-600"
+                                            class="w-10 h-10 p-0 text-gray-600 rounded-full btn hover:bg-gray-100 hover:text-blue-600"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                                             data-bs-title="Mark all as read">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -270,7 +270,7 @@
             <nav class="hidden navbar-vertical-nav xl:block">
                 <div class="navbar-vertical">
                     <div class="px-4 py-5">
-                        <a class="flex items-center space-x-2 navbar-brand" href="./index.html">
+                        <a class="flex items-center space-x-2 navbar-brand" href="{{ route('dashboard') }}">
                             <img src="{{ asset('assets/images/logo/kentech-logo.svg') }}" class="h-8"
                                 alt="TailwindCSS eCommerce HTML Template" />
                             <span class="text-[1.75rem] font-semibold text-black">KenTech</span>
@@ -288,7 +288,7 @@
                                         <div class="simplebar-content" style="padding: 0px;">
                                             <ul class="flex-col navbar-nav" id="sideNavbar">
                                                 <li class="nav-item">
-                                                    <a class="nav-link active " href="../dashboard/index.html">
+                                                    <a class="text-black bg-blue-100 nav-link" href="../dashboard/index.html">
                                                         <div class="flex items-center">
                                                             <span class="nav-link-icon">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20"
@@ -306,7 +306,7 @@
                                                                     </path>
                                                                 </svg>
                                                             </span>
-                                                            <span class="nav-link-text">Dashboard</span>
+                                                            <span class="text-black nav-link-text">Dashboard</span>
                                                         </div>
                                                     </a>
                                                 </li>
@@ -314,7 +314,7 @@
                                                     <span class="nav-label">Store Managements</span>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link " href="../dashboard/products.html">
+                                                    <a class="nav-link " href="{{ route('admin.products.show') }}">
                                                         <div class="flex items-center">
                                                             <span class="nav-link-icon">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20"
